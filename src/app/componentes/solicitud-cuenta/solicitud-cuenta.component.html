@@ -9,7 +9,7 @@
     <ion-input label="Email" label-placement="floating" fill="outline" />
   </ion-item>
   <ion-item>
-    <ion-button shape="round" size="large">
+    <ion-button shape="round" size="large" (click)="tomarFotoCedulaFrontal()">
       <ion-icon slot="icon-only" name="id-card-outline"></ion-icon>
     </ion-button>
     <ion-label>Cédula de identidad (frontal)</ion-label>
@@ -18,7 +18,7 @@
     <ion-img [src]="cedulaFront" alt="cédula de frente" />
   </ion-item>
   <ion-item>
-    <ion-button shape="round" size="large">
+    <ion-button shape="round" size="large" (click)="tomarFotoCedulaTrasera()">
       <ion-icon slot="icon-only" name="journal-outline"></ion-icon>
     </ion-button>
     <ion-label>Cédula de identidad (trasera)</ion-label>
