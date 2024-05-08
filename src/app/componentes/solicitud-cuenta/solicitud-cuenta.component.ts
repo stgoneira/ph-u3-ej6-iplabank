@@ -14,6 +14,7 @@ import { idCardOutline, journalOutline } from 'ionicons/icons'
 export class SolicitudCuentaComponent  implements OnInit {
   cedulaFrontDefault: string = "/assets/cedula-chilena-front.jpg"
   cedulaBackDefault: string = "/assets/cedula-chilena-back.jpg"
+  prefijoBase64:string = "data:image/png;base64, "
   cedulaFront: string = this.cedulaFrontDefault
   cedulaBack: string = this.cedulaBackDefault
 
@@ -27,12 +28,12 @@ export class SolicitudCuentaComponent  implements OnInit {
   ngOnInit() {}
 
   async tomarFotoCedulaFrontal() {
-    this.cedulaFront = "data:image/png;base64, "
+    this.cedulaFront = this.prefijoBase64
     this.cedulaFront += (await this.tomarFoto()).base64String ?? this.cedulaFrontDefault
   }
 
   async tomarFotoCedulaTrasera() {
-    this.cedulaBack = "data:image/png;base64, "
+    this.cedulaBack = this.prefijoBase64
     this.cedulaBack += (await this.tomarFoto()).base64String ?? this.cedulaBackDefault
   }
 
