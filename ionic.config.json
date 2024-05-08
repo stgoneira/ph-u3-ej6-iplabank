@@ -1,0 +1,7 @@
+{
+  "name": "ph-u3-ej6-iplabank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

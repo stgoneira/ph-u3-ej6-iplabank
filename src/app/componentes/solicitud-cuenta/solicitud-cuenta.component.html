@@ -1,0 +1,35 @@
+<ion-list lines="none">
+  <ion-item>
+    <ion-input label="Nombre completo" label-placement="floating" fill="outline" />
+  </ion-item>
+  <ion-item>
+    <ion-input label="RUT" label-placement="floating" fill="outline" />
+  </ion-item>
+  <ion-item>
+    <ion-input label="Email" label-placement="floating" fill="outline" />
+  </ion-item>
+  <ion-item>
+    <ion-button shape="round" size="large">
+      <ion-icon slot="icon-only" name="id-card-outline"></ion-icon>
+    </ion-button>
+    <ion-label>Cédula de identidad (frontal)</ion-label>
+  </ion-item>  
+  <ion-item>
+    <ion-img [src]="cedulaFront" alt="cédula de frente" />
+  </ion-item>
+  <ion-item>
+    <ion-button shape="round" size="large">
+      <ion-icon slot="icon-only" name="journal-outline"></ion-icon>
+    </ion-button>
+    <ion-label>Cédula de identidad (trasera)</ion-label>
+  </ion-item>  
+  <ion-item>
+    <ion-img [src]="cedulaBack" alt="cédula trasera" />
+  </ion-item>
+  <ion-item>
+    <ion-button shape="round" color="success" size="default">Solicitar</ion-button>
+  </ion-item>
+</ion-list>
+  
+
+  
