@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IplaBank</string>
+    <string name="title_activity_main">IplaBank</string>
+    <string name="package_name">ph.u3.ej6.iplabank</string>
+    <string name="custom_url_scheme">ph.u3.ej6.iplabank</string>
+</resources>
